@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 145098895}
   - component: {fileID: 145098894}
   m_Layer: 0
-  m_Name: DeathControl
+  m_Name: LevelStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,12 +204,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145098893}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 33.02667, y: -7.7, z: 0}
   m_LocalScale: {x: 78.80845, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1819110792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -272,7 +272,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -296,12 +296,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.9, y: 14.1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.2, y: 2, z: -10}
+  m_LocalScale: {x: 1, y: 0.54999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1339835044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &648883083
 GameObject:
@@ -375,12 +375,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648883083}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 67.91, y: 28.23, z: 0}
   m_LocalScale: {x: 1, y: 3.3140626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1819110792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &648883086
 MonoBehaviour:
@@ -755,6 +755,12 @@ MonoBehaviour:
   animator: {fileID: 1339835041}
   speed: 10
   jump: 10
+--- !u!4 &1339835044 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4848832338863139616, guid: 6149bd36176343d48a8a71633969a6c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7104812000579000594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1515101205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,7 +1702,7 @@ GameObject:
   - component: {fileID: 1819110792}
   - component: {fileID: 1819110791}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,6 +1735,8 @@ Transform:
   m_Children:
   - {fileID: 1515101206}
   - {fileID: 831892132}
+  - {fileID: 648883085}
+  - {fileID: 145098896}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7104812000579000594
@@ -1801,7 +1809,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4848832338863139616, guid: 6149bd36176343d48a8a71633969a6c6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519420032}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7185144765168309594, guid: 6149bd36176343d48a8a71633969a6c6,
         type: 3}
@@ -1820,8 +1832,5 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 7104812000579000594}
   - {fileID: 1819110792}
-  - {fileID: 648883085}
-  - {fileID: 145098896}

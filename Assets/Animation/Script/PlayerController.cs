@@ -85,4 +85,9 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("Crouch", false);
             }
     }
+
+    public void PickKey()
+    {
+       Debug.Log("Player Picked up the Key");
+    }
 } 
